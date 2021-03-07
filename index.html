@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAhuj8AHLa+wDXx34A67V2APfVhwDr6uoA9/X0APv8+QD37KoA9eOzAOPNhgD39/cA3JYxAEmz5wBOx/kA9+ePAPGeOwDc3NkAhuP7APGqQwD35qMA7rVWAPbihQDr1YkA9MxoAPf08AD9/v0A7u/uAO/v7gDl5OQA/KsfANbV1QD28OsA5MByAOTe1ADyn2MA9stbAPv26wD37aEA7e/vAP7+/gDum28A+fr5APbpnAD19vQA3dzbAPDJpADa0s4A4NzbAG/Z+QDomkkA4ch+AO/ioADXsnIA6enoANLW1AD36I8A7unoAP/+/wD21H0A+6ZAAPXs6AD3+PgA8ePQAPj4+AD17aMA8rRkAN6QFADp5uEA4dKNAPfmlgDn5+cA5dvPAFnL+gD18vEA19HTAN/f3QDWzc4A9eKJAPT09AD48ewA7stnAPLrogDywVoA9tyjAOrk4AD5nlkA+fTkANbU1AD7/PcA////AOe4hQD55YoA2tbXANTS0gBSxPcA/f39APfjqQD+/f0A7eahAODf3wD265sAr9zyAOTKhQD55JYA+uiTAPnjgAD29/YA9u+pAPHz8QDnxXIA3cuLAHzg+gDu69YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHigcHTcjAAAAAAAAAAAASAYAAAAtZTAAAAAAAAAAAG4AAAAAABtWGgdYCkcXCQApRVAAbE0xEitjQDVrXTliAABOSyBZXy5bO1FcBGkQLAAAQT84TF4IW2FaJW1tahUAAABBckk6IT4mFCptZicAAAAADB9SNg1EMyIvU0JPAAAAAFU8VBFDbzQDRmQZAAAAAAAFPVckFhgLcGhnAAAAAAAAAAAAAAAADmAPcQEAAAAAAAAAAAAAAABKMgITAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAAgf8AADj/AAB8AQAAEAAAAMAAAADAAAAA4AEAAOABAADgAwAA4AcAAP+DAAD/wwAA//8AAP//AAA="
+    rel="icon" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Test Grid</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="mainCalc">
+      <div class="calculator">
+        <label for="display" class="form-label title">JS Calculator</label>
+        <input type="text" class="form-control" id="display" placeholder="Let's Calculate">
+      </div>
+      <ul id="keypad">
+        <li><input type="button" value="C" onclick="del()"></li>
+
+        <li><input type="button" value="CE" onclick="clr()"></li>
+
+        <li><input type="button" value="%" onclick="calc('%')"></li>
+        <li><input type="button" value="/" onclick="calc('/')"></li>
+        <li><input type="button" value="7" onclick="calc('7')"></li>
+        <li><input type="button" value="8" onclick="calc('8')"></li>
+        <li><input type="button" value="9" onclick="calc('9')"></li>
+        <li><input type="button" value="x" onclick="calc('*')"></li>
+        <li><input type="button" value="4" onclick="calc('4')"></li>
+        <li><input type="button" value="5" onclick="calc('5')"></li>
+        <li><input type="button" value="6" onclick="calc('6')"></li>
+        <li><input type="button" value="-" onclick="calc('-')"></li>
+        <li><input type="button" value="1" onclick="calc('1')"></li>
+        <li><input type="button" value="2" onclick="calc('2')"></li>
+        <li><input type="button" value="3" onclick="calc('3')"></li>
+        <li><input type="button" value="+" onclick="calc('+')"></li>
+        <li><input type="button" value="00" onclick="calc('00')"></li>
+        <li><input type="button" value="0" onclick="calc('0')"></li>
+        <li><input type="button" value="." onclick="calc('.')"></li>
+        <li><input type="button" value="=" onclick="solve()"></li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+  <!-- script  -->
+  <script src="./js/script.js" onclick="calc('')"></script>
+</body>
+
+</html>
